@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Compra en linea</title>
+</head>
+<body>
+    <header class="header estatico">
+        <div class="contenedor contenido-header">
+            <h1>Equipos de computo</h1>
+            <nav class="navegacion-principal">
+                <ul class="nav">
+                    <li><a href="index.html" class="navegacion__enlace navegacion__enlace--activo">Inicio</a></li>
+                    <li><a href="#" class="navegacion__enlace navegacion__enlace--activo">Consulta</a>
+                        <ul>
+                            <li><a href="#" class="navegacion__enlace navegacion__enlace--activo">Nosotros</a></li>
+                            <li><a href="#" class="navegacion__enlace navegacion__enlace--activo">Producto</a>
+                        </ul>                    
+                    </li>                        
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="contenedor contenido-video">
+                <h2>
+                    CompumundoHypermegared <span>Tecnologia a su servicio</span>
+                </h2>
+            </div>  
+        </div>
+        <video autoplay muted loop>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main class="contenedor contenedor-mod">
+        <form id="formulario" class="formulario">
+            <div class="form-group">
+                <label for="cedula">Cedula</label>
+                <input type="number" class="" id="cedula">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="" id="nombre">
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="" id="apellido">
+            </div>
+            <div class="form-group">
+                <label for="tipo_e">Tipo</label>
+                <select name="tipo_e" id="tipo_e">
+                    <option selected="selected" disabled>--Seleccione una opción de equipo</option>
+                    <option>Escritorio</option>
+                    <option>Portatil</option>
+                    <option>Telefono</option>
+                    <option>Red</option>
+                </select>
+              
+            </div>
+            <input type="submit" value="Guardar" class="btn btn_guardar">
+        </form>
+        <div class="registros">
+            <div id="lista"></div>
+        </div>
+    </main>
+    <script src="js/solicitud.js" type="text/javascript"></script>
+</body>
+</html>
